@@ -1,1 +1,67 @@
 
+- Lambda expression is a new and important feature which was included in Java SE 8.
+- It provides a concise way to represent one method interface using an expression.
+- Java lambda expression is used to provide	the implementation of an interface which has functional interface.It saves a lot of code.
+- Java is OOP Language , if we want to use functional programing language in java we need lambda expression.
+
+Q. What is functional programing language ?
+  A: In this case we can store a function with a variable also can pass a function as a parameter of another function
+  ex: x = f1();
+      f1(f1());
+      
+- An interface which has only one abstract method is called as functional interface.
+- Java provides an annotation @FunctionalInterface which is used to declare an interface as functional interface .
+- Java is treated as a function so compiler doesn't create a .class file .	
+- @FunctionalInterface annotation is used to ensure that the functional interface can’t have more than one abstract method. 
+   In case more than one abstract methods are present, the compiler flags an " Unexpected @FunctionalInterface annotation " message.
+   
+ Q. What is lambda expression ?
+  A: it is anonymus (nameless, no return type, no modifier) function , and also called as closure.
+  
+    Follow the below example will get more clariification
+   # Normal Java Method
+      Public void m1(){
+        System.out.println("Hello")
+      }
+      
+    # Lambda Expression
+    () -> {System.out.println("Hello")}     or  () -> System.out.println("Hello")
+   
+   
+   Note:
+    * "->" is the syntax of lamda expression
+    * "{}" are optional if the is one line code in our method body.
+    
+    
+  Eg:   Write a method to print sum of two numbers.
+  
+     # Normal Java Method
+      Public static void m1(int a, int b){
+        System.out.println(a+b);
+       }
+       
+     # Lambda Expression
+      (a,b) -> System.out.println(a+b)
+      
+   Note:
+    * Accourding to the operation of our method we will declare our data type.
+    * If there is same type operation we need not worry about the datatype of the variable, compiler will take care about it.
+
+
+  Eg: 
+  # Normal Java method
+    Public int square (int n){
+      return n*n
+    }
+    
+  # Lambda Expression
+    (n) -> {return n*n};
+          or
+    n -> {return n*n };
+          or
+    n -> n*n
+    
+   Note:
+    # If there is only one argument then we can remove "()" but remember if we are not passing any argument then "()" is mandatory. 
+   
+    
