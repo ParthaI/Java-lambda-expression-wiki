@@ -1,11 +1,11 @@
 {
 	"myData": {
-		"data"{
+		"data":{
 		"name": "Partha",
 		"age": 23,
 		"organization": "Turbot",
 		"myData": "For crack the world"},
-		"status": "Success"
+		"status": "Success",
 		"statusCode": 200
 	}
 }
